@@ -3,11 +3,43 @@
 @tailwind utilities;
 
 body {
-  margin: 2em;
+  @apply bg-white leading-6;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer base {
+  * {
+    @apply font-sans;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-mono font-bold leading-7 tracking-tight;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  label {
+    @apply text-sm font-semibold;
+  }
+
+  input[type='text'],
+  textarea {
+    @apply p-2 border border-gray-300 w-full rounded;
+
+    &:focus {
+      @apply outline outline-2 outline-offset-2 outline-primary-200 shadow-[0_1px_2px_0_rgba(0,0,0,.05)] border-primary-500;
+    }
   }
 }
