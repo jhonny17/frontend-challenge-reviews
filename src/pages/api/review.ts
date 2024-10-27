@@ -1,14 +1,14 @@
-import type { NextApiRequest, NextApiResponse } from "next";
-import Review from "@/data/Review";
+import type { NextApiRequest, NextApiResponse } from 'next';
+import Review from '@/data/Review';
 
 export default function handler(
   req: NextApiRequest,
-  res: NextApiResponse<Review[]>
+  res: NextApiResponse<Review[]>,
 ) {
-  if (req.method === "GET") {
+  if (req.method === 'GET') {
     // fetch single review by id
     res.status(200);
-  } else if (req.method === "POST") {
+  } else if (req.method === 'POST') {
     // "save" single review by id
     res.status(200);
   } else {
