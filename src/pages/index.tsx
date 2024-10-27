@@ -1,7 +1,7 @@
-import { Inter } from "next/font/google";
-import ReviewApp from "@/components/ReviewApp";
+import { Inter } from 'next/font/google';
+import ReviewApp from '@/components/ReviewApp';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (

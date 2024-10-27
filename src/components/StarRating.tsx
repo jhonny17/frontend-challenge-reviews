@@ -1,4 +1,4 @@
-import Star from "@/components/Star";
+import Star from '@/components/Star';
 
 const StarRating = () => {
   return (
@@ -19,5 +19,5 @@ const StarRating = () => {
   );
 };
 
-StarRating.displayName = "StarRating";
+StarRating.displayName = 'StarRating';
 export default StarRating;

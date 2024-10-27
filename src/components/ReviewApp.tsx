@@ -1,4 +1,4 @@
-import StarRating from "@/components/StarRating";
+import StarRating from '@/components/StarRating';
 
 const ReviewApp = () => {
   // Tip: You can grab data with fetch or an HTTP client of your choice:
@@ -12,5 +12,5 @@ const ReviewApp = () => {
   );
 };
 
-ReviewApp.displayName = "ReviewApp";
+ReviewApp.displayName = 'ReviewApp';
 export default ReviewApp;
