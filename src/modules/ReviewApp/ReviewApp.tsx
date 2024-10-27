@@ -1,6 +1,17 @@
 import cx from 'classnames';
 
+import NewReview from './sections/NewReview';
+
+import { useSaveReview } from './hooks/useSaveReview';
+
+import { Review as ReviewType } from '@/data/reviews';
+
 const ReviewApp = () => {
+  const { handleSaveReview } = useSaveReview();
+  const saveReview = async (review: Omit<ReviewType, 'id'>) => {
+    await handleSaveReview(review);
+  };
+
   return (
     <div
       className={cx(
@@ -17,6 +28,7 @@ const ReviewApp = () => {
         'md:gap-4',
       )}
     >
+      <NewReview handleSaveReview={saveReview} />
     </div>
   );
 };
