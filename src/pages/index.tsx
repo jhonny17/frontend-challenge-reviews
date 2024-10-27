@@ -1,15 +1,34 @@
-import { Inter } from "next/font/google";
-import ReviewApp from "@/components/ReviewApp";
+import { Inter } from 'next/font/google';
+import Head from 'next/head';
+import cx from 'classnames';
 
-const inter = Inter({ subsets: ["latin"] });
+import ReviewApp from '@/modules/ReviewApp';
+
+const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center p-24 ${inter.className}`}
-    >
-      <h1>Review App</h1>
-      <ReviewApp />
-    </main>
+    <>
+      <Head>
+        <title>Review App</title>
+        <meta name="description" content="Front-End Challenge" />
+      </Head>
+      <main className={cx('flex', 'flex-col', inter.className)}>
+        <h1
+          className={cx(
+            'py-2',
+            'bg-primary-700',
+            'text-white',
+            'text-3xl',
+            'text-center',
+          )}
+        >
+          <span className="text-black">Review</span>
+          App
+        </h1>
+
+        <ReviewApp />
+      </main>
+    </>
   );
 }
