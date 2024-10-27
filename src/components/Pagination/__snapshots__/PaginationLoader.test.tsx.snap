@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div>
+  <div
+    class="flex gap-2 justify-end"
+  >
+    <div
+      class="bg-neutral-200 animate-pulse rounded-sm w-8 h-8"
+    />
+    <div
+      class="bg-neutral-200 animate-pulse rounded-sm w-8 h-8"
+    />
+    <div
+      class="bg-neutral-200 animate-pulse rounded-sm w-8 h-8"
+    />
+    <div
+      class="bg-neutral-200 animate-pulse rounded-sm w-8 h-8"
+    />
+  </div>
+</div>
+`;
